@@ -1,17 +1,15 @@
 AddEventHandler('weaponDamageEvent', function(sender, data)  
-    print(sender)
-    print(data.weaponType)
     if data.weaponType == 133987706 then
         CancelEvent()
     end
-    if data.weaponType == 133987706 or data.weaponType == -1569615261 and data.weaponDamage > 40 then
+    if data.weaponType == 133987706 or data.weaponType == -1569615261 and data.weaponDamage > 55 then
         CancelEvent()
     end 
-    if Config.AntiCitizenOnePunch and data.weaponType == 2725352035 and data.weaponDamage > 50 then
+    if Config.AntiCitizenOnePunch and data.weaponType == 2725352035 and data.weaponDamage > 60 then
         CancelEvent()
         banat(sender, "[HotStudio] Tek Yumruk Algılandı ")
     end 
-    if Config.AntiCitizenOnePunch and data.weaponType == -1569615261 and data.weaponDamage > 45 then
+    if Config.AntiCitizenOnePunch and data.weaponType == -1569615261 and data.weaponDamage > 60 then
         CancelEvent()
         banat(sender, "[HotStudio] Tek Yumruk Algılandı ")
     end 
